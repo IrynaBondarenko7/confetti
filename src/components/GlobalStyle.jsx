@@ -24,6 +24,9 @@ export const GlobalStyle = createGlobalStyle`
     --extra-text-color:#565148;
     --accent-color:#ED4B5E;
     --extra-accent-color: #FFEFF0;
+    --background: #fff;
+    --card-bg: #444444;
+    --card-background: #808080;
 }
 body {
   margin: 0;
@@ -54,5 +57,8 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+button {
+  cursor: pointer;
 }
 `;

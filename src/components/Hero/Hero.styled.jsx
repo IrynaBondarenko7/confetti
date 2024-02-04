@@ -5,6 +5,13 @@ export const StyledHeroSection = styled.section`
   background-image: url(${herobg});
   background-repeat: no-repeat;
   position: relative;
+  @media screen and (min-width: 360px) and (max-width: 480px) {
+    width: 100%;
+  }
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
 `;
 
 export const StyledFirstBallonsImg = styled.img`
