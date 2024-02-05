@@ -30,7 +30,7 @@ const ContactsSchema = Yup.object().shape({
 
 export const Contacts = () => {
   return (
-    <StyledContactsSection>
+    <StyledContactsSection id="contacts">
       <StyledContavtsTitle>Kontakty</StyledContavtsTitle>
       <StyledContactsText>
         Confetti - Studio <br />

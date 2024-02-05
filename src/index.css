@@ -15,3 +15,7 @@ code {
 .swiper-pagination-bullet-active {
   background: var(--main-color) !important;
 }
+
+body.menu-open {
+  overflow: hidden;
+}

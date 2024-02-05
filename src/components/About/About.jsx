@@ -17,7 +17,7 @@ import {
 
 export const About = () => {
   return (
-    <StyledAboutSection>
+    <StyledAboutSection id="about">
       <StyledAboutTitle>Kreatywny zespół dekoratorów</StyledAboutTitle>
       <StyledAboutText>
         Młodzi i energiczni, rozwijający działalność w zakresie tworzenia

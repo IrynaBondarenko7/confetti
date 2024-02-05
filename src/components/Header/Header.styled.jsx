@@ -1,7 +1,6 @@
 import { styled } from "styled-components";
 
 export const StyledHeader = styled.header`
-  padding: 30px 20px;
   position: fixed;
   top: 0;
   right: 0;
@@ -17,6 +16,7 @@ export const StyledHeaderWrap = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 30px 20px;
 `;
 
 export const StyledMenuButton = styled.button`

@@ -7,9 +7,26 @@ import {
   StyledMenuButton,
   StyledMenuIconText,
 } from "./Header.styled";
+import { BurgerMenu } from "../BurgerMenu/BurgerMenu";
 
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
+
+  const onMenuBtnClick = () => {
+    setIsVisible(!isVisible);
+  };
+
+  const openMenu = () => {
+    document.body.classList.add("menu-open");
+    onMenuBtnClick();
+  };
+
+  // Видаліть клас при закритті бургер меню
+  const closeMenu = () => {
+    document.body.classList.remove("menu-open");
+    onMenuBtnClick();
+  };
 
   const handleScroll = () => {
     const scrollTop = window.scrollY;
@@ -38,7 +55,7 @@ export const Header = () => {
             display: isScrolled ? "none" : "block",
           }}
         />
-        <StyledMenuButton>
+        <StyledMenuButton onClick={openMenu}>
           <StyledMenuIconText
             style={{
               display: isScrolled ? "none" : "block",
@@ -49,6 +66,7 @@ export const Header = () => {
           <Menu />
         </StyledMenuButton>
       </StyledHeaderWrap>
+      {isVisible && <BurgerMenu closeMenu={closeMenu} />}
     </StyledHeader>
   );
 };

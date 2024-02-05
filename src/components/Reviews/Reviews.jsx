@@ -14,7 +14,7 @@ import {
 
 export const Reviews = () => {
   return (
-    <StyledRewiewsSection>
+    <StyledRewiewsSection id="reviews">
       <StyledReviewSTitle>Recenzje</StyledReviewSTitle>
       <Swiper
         modules={[Pagination]}

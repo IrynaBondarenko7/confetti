@@ -9,7 +9,7 @@ import {
 
 export const Hero = () => {
   return (
-    <StyledHeroSection>
+    <StyledHeroSection id="hero">
       <StyledFirstBallonsImg src={ballons1} alt="ballons" />
       <StyledHeroTitle>
         Tworzymy unikalne <br />i niepowtarzalne
