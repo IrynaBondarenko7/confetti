@@ -4,23 +4,20 @@ import {
   StyledFirstBallonsImg,
   StyledHeroSection,
   StyledHeroTitle,
-  StyledHeroWrap,
   StyledSecondBallonsImg,
 } from "./Hero.styled";
 
 export const Hero = () => {
   return (
     <StyledHeroSection>
-      <StyledHeroWrap>
-        <StyledFirstBallonsImg src={ballons1} alt="ballons" />
-        <StyledHeroTitle>
-          Tworzymy unikalne <br />i niepowtarzalne
-          <br />
-          <span>dekoracje balonowe</span>
-          <br /> na imprezy
-        </StyledHeroTitle>
-        <StyledSecondBallonsImg src={ballons2} alt="ballons" />
-      </StyledHeroWrap>
+      <StyledFirstBallonsImg src={ballons1} alt="ballons" />
+      <StyledHeroTitle>
+        Tworzymy unikalne <br />i niepowtarzalne
+        <br />
+        <span>dekoracje balonowe</span>
+        <br /> na imprezy
+      </StyledHeroTitle>
+      <StyledSecondBallonsImg src={ballons2} alt="ballons" />
     </StyledHeroSection>
   );
 };

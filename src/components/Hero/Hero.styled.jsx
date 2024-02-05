@@ -12,6 +12,8 @@ export const StyledHeroSection = styled.section`
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 212px;
+  padding-bottom: 234px;
 `;
 
 export const StyledFirstBallonsImg = styled.img`
@@ -26,11 +28,6 @@ export const StyledSecondBallonsImg = styled.img`
   top: 272px;
   right: 0;
   z-index: -1;
-`;
-
-export const StyledHeroWrap = styled.div`
-  padding-top: 212px;
-  padding-bottom: 234px;
 `;
 
 export const StyledHeroTitle = styled.h1`

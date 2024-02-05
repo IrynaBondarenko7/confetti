@@ -27,6 +27,9 @@ export const GlobalStyle = createGlobalStyle`
     --background: #fff;
     --card-bg: #444444;
     --card-background: #808080;
+    --label-color: #949494;
+    --border-color: #d2d2d2;
+    --disabled-btn: rgba(237, 75, 94, 0.75);
 }
 body {
   margin: 0;
