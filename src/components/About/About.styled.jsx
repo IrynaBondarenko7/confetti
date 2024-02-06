@@ -75,6 +75,9 @@ export const StyledAboutSection = styled.section`
   @media screen and (min-width: 768px) {
     width: 768px;
   }
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+  }
 `;
 
 export const StyledAboutTitle = styled.h2`
@@ -89,6 +92,10 @@ export const StyledAboutTitle = styled.h2`
   margin-bottom: 16px;
   @media screen and (min-width: 768px) {
     font-size: 48px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 56px;
+    margin-bottom: 24px;
   }
 `;
 
@@ -109,13 +116,17 @@ export const StyledAboutText = styled.p`
     display: block;
     margin-bottom: 48px;
   }
+  @media screen and (min-width: 1280px) {
+    width: 700px;
+    margin-bottom: 64px;
+  }
 `;
 
 export const StyledAboutCardGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr;
 
-  @media screen and (min-width: 1199px) {
+  @media screen and (min-width: 1280px) {
     grid-template-columns: 1fr 1fr;
   }
 `;

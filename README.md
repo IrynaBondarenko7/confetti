@@ -50,5 +50,6 @@ The responsive layout spans from mobile (360px to 480px) with a flexible design,
 - Styled Components
 - Formik
 - Yup
+- React-responsive
 
 Feel free to explore and enjoy the Confetti Store Landing Page! If you have any questions or feedback, please don't hesitate to reach out.

@@ -31,7 +31,14 @@ export const StyledHeroSection = styled.section`
     padding-bottom: 327px;
     background-image: url(${heroBG}), url(${yelloyTabRmbBg}),
       url(${yelloyTabLmbBg});
-    background-position: top 0 right 30px, top 357px right 0, top 97px left 0;
+    background-position: top 0 right 0, top 357px right 0, top 97px left 0;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    background-position: top 0 right -170px, top 178px right 0,
+      top 97px left 10px;
+    padding-top: 344px;
+    padding-bottom: 342px;
   }
 `;
 export const StyledFirstBallonsImg = styled.img`
@@ -60,6 +67,19 @@ export const StyledSecondTabBallonsImg = styled.img`
   z-index: -1;
 `;
 
+export const StyledFirstBallonsDeskImg = styled.img`
+  position: absolute;
+  top: 195px;
+  left: 0;
+  z-index: -1;
+`;
+export const StyledSecondBallonsDeskImg = styled.img`
+  position: absolute;
+  top: 415px;
+  right: -20px;
+  z-index: -1;
+`;
+
 export const StyledHeroTitle = styled.h1`
   color: var(--accent-color);
   text-align: center;
@@ -75,5 +95,8 @@ export const StyledHeroTitle = styled.h1`
   }
   @media screen and (min-width: 768px) {
     font-size: 64px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 88px;
   }
 `;

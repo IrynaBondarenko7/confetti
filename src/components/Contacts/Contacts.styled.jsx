@@ -22,18 +22,34 @@ export const StyledContactsSection = styled.section`
     width: 768px;
     position: relative;
   }
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 112px 80px 112px;
+    gap: 220px;
+  }
 `;
 
 export const StyledBallonsLeftImg = styled.img`
   position: absolute;
   top: 199px;
   left: 0;
+  @media screen and (min-width: 1280px) {
+    left: 449px;
+    top: -23px;
+  }
 `;
 
 export const StyledBallonsRightImg = styled.img`
   position: absolute;
   top: 454px;
   right: 0;
+  @media screen and (min-width: 1280px) {
+    top: 254px;
+    right: -24px;
+  }
 `;
 
 export const StyledContavtsTitle = styled.h2`
@@ -50,6 +66,9 @@ export const StyledContavtsTitle = styled.h2`
     font-size: 48px;
     margin-bottom: 24px;
   }
+  @media screen and (min-width: 1280px) {
+    font-size: 100px;
+  }
 `;
 
 export const StyledContactsText = styled.h3`
@@ -64,6 +83,9 @@ export const StyledContactsText = styled.h3`
   margin-bottom: 24px;
   @media screen and (min-width: 768px) {
     font-size: 24px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 40px;
   }
 `;
 

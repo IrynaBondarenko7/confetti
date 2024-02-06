@@ -9,6 +9,12 @@ export const StyledBurgerManu = styled.section`
   z-index: 10;
   padding: 32px 20px;
   overflow: hidden;
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+  }
 `;
 
 export const StyledBurgerMenuList = styled.ul`
@@ -47,6 +53,9 @@ export const StyledBurgerMenuLink = styled.a`
   text-transform: uppercase;
   @media screen and (min-width: 768px) {
     font-size: 40px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 64px;
   }
 `;
 

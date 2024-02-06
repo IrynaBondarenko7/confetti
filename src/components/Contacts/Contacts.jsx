@@ -1,7 +1,10 @@
 import { Formik } from "formik";
 import * as Yup from "yup";
+import { useMediaQuery } from "react-responsive";
 import ballonsL from "../../images/contacts/balloons-tab-lt.png";
 import ballonsR from "../../images/contacts/balloons-tab-rt.png";
+import ballonsDeskL from "../../images/contacts/balloons-desk-lt.png";
+import ballonsDeskR from "../../images/contacts/balloons-desk-rt.png";
 import {
   StyledContactsSection,
   StyledContactsText,
@@ -33,23 +36,29 @@ const ContactsSchema = Yup.object().shape({
 });
 
 export const Contacts = () => {
+  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1279 });
+  const isDesktop = useMediaQuery({ minWidth: 1280 });
+
   return (
     <StyledContactsSection id="contacts">
-      <StyledContavtsTitle>Kontakty</StyledContavtsTitle>
-      <StyledContactsText>
-        Confetti - Studio <br />
-        Dekoracij Balonami
-        <br /> Warszawa 
-      </StyledContactsText>
-      <StyledContacs href="tel:+48793351407">
-        <Call />
-        +48 793 351 407 
-      </StyledContacs>
-      <StyledContactsEmail href="malito:confettibalony@gmail.com">
-        <SMS />
-        confettibalony@gmail.com
-      </StyledContactsEmail>
-      <StyledBallonsLeftImg src={ballonsL} alt="ballons" />
+      <div>
+        <StyledContavtsTitle>Kontakty</StyledContavtsTitle>
+        <StyledContactsText>
+          Confetti - Studio <br />
+          Dekoracij Balonami
+          <br /> Warszawa 
+        </StyledContactsText>
+        <StyledContacs href="tel:+48793351407">
+          <Call />
+          +48 793 351 407 
+        </StyledContacs>
+        <StyledContactsEmail href="malito:confettibalony@gmail.com">
+          <SMS />
+          confettibalony@gmail.com
+        </StyledContactsEmail>
+      </div>
+      {isTablet && <StyledBallonsLeftImg src={ballonsL} alt="ballons" />}
+      {isDesktop && <StyledBallonsLeftImg src={ballonsDeskL} alt="ballons" />}
       <Formik
         initialValues={{
           name: "",
@@ -108,7 +117,8 @@ export const Contacts = () => {
           );
         }}
       </Formik>
-      <StyledBallonsRightImg src={ballonsR} alt="ballons" />
+      {isTablet && <StyledBallonsRightImg src={ballonsR} alt="ballons" />}
+      {isDesktop && <StyledBallonsRightImg src={ballonsDeskR} alt="ballons" />}
     </StyledContactsSection>
   );
 };

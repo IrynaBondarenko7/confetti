@@ -16,6 +16,9 @@ export const StyledRewiewsSection = styled.section`
   @media screen and (min-width: 768px) {
     width: 768px;
   }
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+  }
 `;
 
 export const StyledReviewSTitle = styled.h2`
@@ -28,6 +31,13 @@ export const StyledReviewSTitle = styled.h2`
   letter-spacing: -0.36px;
   text-transform: uppercase;
   margin-bottom: 36px;
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 100px;
+    margin-bottom: 64px;
+  }
 `;
 
 export const StyledRewiewsCardWrap = styled.aside`
@@ -47,6 +57,11 @@ export const StyledRewiewsCardWrap = styled.aside`
     width: 346px;
     justify-content: space-between;
   }
+  @media screen and (min-width: 1280px) {
+    margin: 0;
+    width: 388px;
+    height: 277px;
+  }
 `;
 
 export const StyledRewiewText = styled.p`
@@ -57,6 +72,9 @@ export const StyledRewiewText = styled.p`
   font-weight: 500;
   line-height: 130%; /* 23.4px */
   letter-spacing: -0.18px;
+  @media screen and (min-width: 1280px) {
+    font-size: 24px;
+  }
 `;
 
 export const StyledReviewUserName = styled.p`
@@ -76,4 +94,10 @@ export const StyledReviewUserName = styled.p`
     width: 24px;
     height: 24px;
   }
+`;
+
+export const StyledDeskCardWrap = styled.div`
+  display: flex;
+  gap: 26px;
+  justify-content: center;
 `;

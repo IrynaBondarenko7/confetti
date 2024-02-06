@@ -17,6 +17,9 @@ export const StyledHeader = styled.header`
   @media screen and (min-width: 768px) {
     width: 768px;
   }
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+  }
 `;
 
 export const StyledHeaderWrap = styled.div`
@@ -32,6 +35,9 @@ export const StyledHeaderWrap = styled.div`
   @media screen and (min-width: 768px) {
     width: 768px;
     padding: 31px 30px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
   }
 `;
 
