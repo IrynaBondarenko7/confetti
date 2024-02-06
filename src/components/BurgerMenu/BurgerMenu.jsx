@@ -1,10 +1,10 @@
-import { ReactComponent as LoginIcon } from "../../images/logo.svg";
 import { ReactComponent as Close } from "../../images/close-square.svg";
 import {
   StyledBurgerManu,
   StyledBurgerMenuLink,
   StyledBurgerMenuList,
   StyledIconsWrap,
+  StyledLogoText,
   StyledMenuBtn,
 } from "./BurgerMenu.styled";
 
@@ -12,7 +12,7 @@ export const BurgerMenu = ({ closeMenu }) => {
   return (
     <StyledBurgerManu>
       <StyledIconsWrap>
-        <LoginIcon />
+        <StyledLogoText>CONFETTI</StyledLogoText>
         <StyledMenuBtn type="button" onClick={closeMenu}>
           <Close />
         </StyledMenuBtn>

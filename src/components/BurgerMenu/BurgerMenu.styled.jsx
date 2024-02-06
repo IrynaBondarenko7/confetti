@@ -46,3 +46,14 @@ export const StyledBurgerMenuLink = styled.a`
   letter-spacing: -0.24px;
   text-transform: uppercase;
 `;
+
+export const StyledLogoText = styled.p`
+  color: var(--accent-color);
+  font-family: "Anzeigen Grotesk T";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.36px;
+  text-transform: uppercase;
+`;

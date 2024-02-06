@@ -22,7 +22,6 @@ export const Header = () => {
     onMenuBtnClick();
   };
 
-  // Видаліть клас при закритті бургер меню
   const closeMenu = () => {
     document.body.classList.remove("menu-open");
     onMenuBtnClick();
