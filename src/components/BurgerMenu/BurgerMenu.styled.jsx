@@ -45,6 +45,9 @@ export const StyledBurgerMenuLink = styled.a`
   line-height: normal;
   letter-spacing: -0.24px;
   text-transform: uppercase;
+  @media screen and (min-width: 768px) {
+    font-size: 40px;
+  }
 `;
 
 export const StyledLogoText = styled.p`

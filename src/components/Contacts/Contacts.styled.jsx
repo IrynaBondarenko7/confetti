@@ -7,12 +7,33 @@ import {
 
 export const StyledContactsSection = styled.section`
   background-color: var(--background);
-  @media screen and (min-width: 360px) and (max-width: 480px) {
-    width: 100%;
-  }
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 0 80px 0;
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 767px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    position: relative;
+  }
+`;
+
+export const StyledBallonsLeftImg = styled.img`
+  position: absolute;
+  top: 199px;
+  left: 0;
+`;
+
+export const StyledBallonsRightImg = styled.img`
+  position: absolute;
+  top: 454px;
+  right: 0;
 `;
 
 export const StyledContavtsTitle = styled.h2`
@@ -25,6 +46,10 @@ export const StyledContavtsTitle = styled.h2`
   letter-spacing: -0.36px;
   text-transform: uppercase;
   margin-bottom: 36px;
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    margin-bottom: 24px;
+  }
 `;
 
 export const StyledContactsText = styled.h3`
@@ -37,6 +62,9 @@ export const StyledContactsText = styled.h3`
   letter-spacing: -0.28px;
   text-transform: uppercase;
   margin-bottom: 24px;
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+  }
 `;
 
 export const StyledContacs = styled.a`
@@ -62,6 +90,9 @@ export const StyledContacs = styled.a`
     height: 24px;
     stroke: currentColor;
   }
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+  }
 `;
 
 export const StyledContactsEmail = styled(StyledContacs)`
@@ -74,7 +105,15 @@ export const Form = styled(FormikForm)`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: 1;
   background: var(--extra-accent-color);
+  @media screen and (min-width: 768px) {
+    width: 608px;
+    margin: 0 auto;
+    border-radius: 24px;
+    padding: 57px 83px 56px 82px;
+  }
 `;
 
 export const Field = styled(FormikField)`
@@ -109,6 +148,9 @@ export const Field = styled(FormikField)`
   }
   @media screen and (min-width: 360px) and (max-width: 480px) {
     width: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    width: 443px;
   }
 `;
 
@@ -156,9 +198,7 @@ export const StyledSubmitButton = styled.button`
   line-height: normal;
   letter-spacing: -0.28px;
   text-transform: uppercase;
-  @media screen and (min-width: 360px) and (max-width: 480px) {
-    width: 100%;
-  }
+  width: 100%;
 `;
 export const ErrorMessage = styled(FormikErrorMessage)`
   color: var(--accent-color);

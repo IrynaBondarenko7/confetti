@@ -1,5 +1,7 @@
 import { Formik } from "formik";
 import * as Yup from "yup";
+import ballonsL from "../../images/contacts/balloons-tab-lt.png";
+import ballonsR from "../../images/contacts/balloons-tab-rt.png";
 import {
   StyledContactsSection,
   StyledContactsText,
@@ -12,6 +14,8 @@ import {
   StyledFormTextarea,
   StyledSubmitButton,
   ErrorMessage,
+  StyledBallonsLeftImg,
+  StyledBallonsRightImg,
 } from "./Contacts.styled";
 import { ReactComponent as Call } from "../../images/call.svg";
 import { ReactComponent as SMS } from "../../images/sms.svg";
@@ -45,6 +49,7 @@ export const Contacts = () => {
         <SMS />
         confettibalony@gmail.com
       </StyledContactsEmail>
+      <StyledBallonsLeftImg src={ballonsL} alt="ballons" />
       <Formik
         initialValues={{
           name: "",
@@ -103,6 +108,7 @@ export const Contacts = () => {
           );
         }}
       </Formik>
+      <StyledBallonsRightImg src={ballonsR} alt="ballons" />
     </StyledContactsSection>
   );
 };

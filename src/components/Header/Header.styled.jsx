@@ -3,13 +3,20 @@ import { styled } from "styled-components";
 export const StyledHeader = styled.header`
   position: fixed;
   top: 0;
-  right: 0;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 20;
-  @media screen and (min-width: 360px) and (max-width: 480px) {
-    width: 100%;
-  }
   max-width: 1280px;
   margin: 0 auto;
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 481px) and (max-width: 767px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
 `;
 
 export const StyledHeaderWrap = styled.div`
@@ -17,6 +24,15 @@ export const StyledHeaderWrap = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 30px 20px;
+  margin: 0 auto;
+  max-width: 1280px;
+  @media screen and (min-width: 481px) and (max-width: 767px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding: 31px 30px;
+  }
 `;
 
 export const StyledMenuButton = styled.button`

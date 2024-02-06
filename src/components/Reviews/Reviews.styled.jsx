@@ -2,12 +2,20 @@ import { styled } from "styled-components";
 
 export const StyledRewiewsSection = styled.section`
   background-color: var(--background);
-  @media screen and (min-width: 360px) and (max-width: 480px) {
-    width: 100%;
-  }
+
   max-width: 1280px;
   margin: 0 auto;
   padding: 80px 20px;
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 481px) and (max-width: 767px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
 `;
 
 export const StyledReviewSTitle = styled.h2`
@@ -35,6 +43,10 @@ export const StyledRewiewsCardWrap = styled.aside`
   align-items: flex-start;
   gap: 42px;
   background: var(--extra-accent-color);
+  @media screen and (min-width: 768px) {
+    width: 346px;
+    justify-content: space-between;
+  }
 `;
 
 export const StyledRewiewText = styled.p`

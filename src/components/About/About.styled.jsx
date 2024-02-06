@@ -12,6 +12,12 @@ export const StyledAboutCardWrap = styled.aside`
   flex-direction: column;
   align-items: flex-start;
   gap: 45px;
+  @media screen and (min-width: 768px) {
+    width: 596px;
+    padding: 48px;
+    gap: 40px;
+    height: auto;
+  }
 `;
 
 export const StyledSecondAboutCardWrap = styled(StyledAboutCardWrap)`
@@ -34,6 +40,9 @@ export const StyledCardTitle = styled.h3`
   line-height: 120%; /* 28.8px */
   letter-spacing: -0.24px;
   text-transform: uppercase;
+  @media screen and (min-width: 768px) {
+    font-size: 40px;
+  }
 `;
 
 export const StyledCardText = styled.p`
@@ -44,17 +53,28 @@ export const StyledCardText = styled.p`
   font-weight: 500;
   line-height: 145%; /* 23.2px */
   letter-spacing: -0.16px;
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+  }
 `;
 
 export const StyledAboutSection = styled.section`
   background-color: var(--background);
-  @media screen and (min-width: 360px) and (max-width: 480px) {
-    width: 100%;
-  }
+
   max-width: 1280px;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 767px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
 `;
 
 export const StyledAboutTitle = styled.h2`
@@ -67,6 +87,9 @@ export const StyledAboutTitle = styled.h2`
   letter-spacing: -0.36px;
   text-transform: uppercase;
   margin-bottom: 16px;
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+  }
 `;
 
 export const StyledAboutText = styled.p`
@@ -79,4 +102,20 @@ export const StyledAboutText = styled.p`
   line-height: 140%; /* 28px */
   letter-spacing: -0.2px;
   margin-bottom: 36px;
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    width: 584px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 48px;
+  }
+`;
+
+export const StyledAboutCardGrid = styled.div`
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media screen and (min-width: 1199px) {
+    grid-template-columns: 1fr 1fr;
+  }
 `;
