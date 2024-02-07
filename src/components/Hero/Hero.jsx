@@ -25,6 +25,7 @@ export const Hero = () => {
     <StyledHeroSection id="hero">
       {isMobile && <StyledFirstBallonsImg src={ballons1} alt="ballons" />}
       {isTablet && <StyledFirstTabBallonsImg src={ballons3} alt="ballons" />}
+
       {isDesktop && <StyledFirstBallonsDeskImg src={ballons5} alt="ballons" />}
       <StyledHeroTitle>
         Tworzymy unikalne <br />i niepowtarzalne

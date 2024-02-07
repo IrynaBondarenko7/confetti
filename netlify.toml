@@ -1,0 +1,19 @@
+[build]
+  command = "npm run build"
+  publish = "build/"
+
+[build.environment]
+  NODE_VERSION = "18.17.0"
+
+[context.production.environment]
+  NODE_ENV = "production"
+
+[context.split1]
+  command = "npm run lint"
+  [context.split1.environment]
+    MY_VAR = "my value"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

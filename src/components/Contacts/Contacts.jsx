@@ -26,7 +26,7 @@ import { ReactComponent as SMS } from "../../images/sms.svg";
 const ContactsSchema = Yup.object().shape({
   name: Yup.string()
     .matches(
-      /^[a-zA-Zа-яА-Я]+([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*$/,
+      /^[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ]+([' -][a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ ])?[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ]*$/,
       "Nieprawidłowe Іmię"
     )
     .required("Name is required"),

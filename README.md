@@ -2,7 +2,7 @@
 
 ![Project Logo](./src/images/CONFETTI.png)
 
-Welcome to the README file for the Confetti Store Landing Page, a React-based landing page for a balloon shop. This landing page incorporates various features and functionalities to create an engaging and responsive user experience.
+Welcome to the README file for the Confetti Store Landing Page, a React-based landing page for a balloon shop. This landing page incorporates various features and functionalities to create an engaging and responsive user experience. The responsive layout spans from mobile (360px to 480px) with a flexible design, to tablet (768px), and desktop (1280px).
 
 ## Table of Contents
 
@@ -25,7 +25,7 @@ The burger menu includes a close button and navigation menu. Each menu item is c
 
 ## Hero (Główna)
 
-In addition to the main content, this section features a light animation of balloons for added visual appeal.
+Contains a header and bright pictures of balloons.
 
 ## About Us (O nas)
 
@@ -41,7 +41,7 @@ The form is validated, with the Name and Email fields being mandatory, while the
 
 ## Footer
 
-The responsive layout spans from mobile (360px to 480px) with a flexible design, to tablet (768px), and desktop (1280px). It includes the logo, copyright information, and utilizes React, Swiper, Styled Components, Formik, and Yup.
+It includes the logo, copyright information.
 
 ## Technologies Used
 

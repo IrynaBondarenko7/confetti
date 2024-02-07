@@ -18,6 +18,8 @@ export const StyledHeroSection = styled.section`
   padding-bottom: 234px;
   z-index: -2;
   background-position: top 0 right 30px, top 272px right 0, top 60px left 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
   @media screen and (max-width: 480px) {
     width: 100%;
   }
@@ -31,7 +33,7 @@ export const StyledHeroSection = styled.section`
     padding-bottom: 327px;
     background-image: url(${heroBG}), url(${yelloyTabRmbBg}),
       url(${yelloyTabLmbBg});
-    background-position: top 0 right 0, top 357px right 0, top 97px left 0;
+    background-position: top 0 right 0, top 30px right 0, top 12px left 0;
   }
   @media screen and (min-width: 1280px) {
     width: 1280px;
